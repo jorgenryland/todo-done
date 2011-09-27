@@ -74,7 +74,7 @@
 
         displayItem: function (item) {
             this.view.innerHTML =
-                buildLi("todo", item.text) + this.view.innerHTML;
+                buildLi("todo", item.text, item.id) + this.view.innerHTML;
         },
 
         handleError: function (err) {

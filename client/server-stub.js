@@ -11,13 +11,17 @@
         id: 2,
         done: false
     }, {
-        text: "Get the hose again",
+        text: "Test",
         id: 3,
+        done: false
+    }, {
+        text: "Get the hose again",
+        id: 4,
         done: false
     }];
 
     var headers = { "Content-Type": "application/json" };
-    var id = 4;
+    var id = 5;
 
     server.respondWith(
         "GET", "/todo-items",
@@ -32,7 +36,7 @@
     });
 
     server.respondWith(
-        "POST", "/todo-items/3", [404, headers, JSON.stringify(list[0])]);
+        "POST", "/todo-items/2", [404, headers, JSON.stringify(list[0])]);
 
     server.respondWith(
         "POST", /\/todo\-items\/\d+/, [200, headers, JSON.stringify(list[0])]);
