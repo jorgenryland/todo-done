@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo.JS - Dirt simple todo list in JavaScript</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Christian Johansen">
+    <link href="/stylesheets/todo-js.css" media="screen,projection,handheld" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="errors" class="system-bar"></div>
+    <h1>Todo.JS</h1>
+    <h2>Dirt simple todo list in JavaScript</h2>
+    <form action="/todo-items" method="post" id="todo-form">
+      <fieldset>
+        <label for="item">Add new item</label>
+        <input type="text" id="item" name="item">
+        <input type="submit" value="GO!">
+      </fieldset>
+    </form>
+    <h2>Your todo items</h2>
+    <ol class="todo-items" id="todo-items">
+    </ol>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/todo.js"></script>
+  </body>
+</html>

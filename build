@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cp -r client/images server/public/.
+mkdir -p server/public/stylesheets
+mkdir -p server/public/javascripts
+juicer merge -f -b -d client -o server/public/stylesheets/todo-js.css client/stylesheets/todo-js.css
+juicer merge -f -s -o server/public/javascripts/todo.js client/bootstrap.js
+du -h server/public/javascripts/todo.js
