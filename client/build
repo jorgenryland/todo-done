@@ -6,4 +6,4 @@ cp -r images dist/.
 mkdir dist/stylesheets
 juicer merge -o dist/stylesheets/todo-js.css stylesheets/todo-js.css
 juicer merge -s -o dist/todo.js bootstrap.js
-du -h dist/todo.j
+du -h dist/todo.js
